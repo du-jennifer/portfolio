@@ -87,24 +87,23 @@
                     <input type="url" id="linkedinurl" name="linkedinurl">
                     <br><br>
                     <label for="preferred">Choose preferred contact:</label>
-                    <input list="preferredlist" name="preferred" id="preferred">
-                    <datalist id="preferredlist">
-                        <option value="Email">
-                        <option value="Phone">
-                        <option value="LinkedIn">
-                    </datalist>
+                    <select id="preferred">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="linkedin">LinkedIn</option>
+                    </select>
                 </fieldset>
                 
                 <fieldset>
                     <legend>How did you find me?</legend>
-                    <label for="browser">Choose from list:</label>
-                    <input list="browsers" name="browser" id="browser">
-                    <datalist id="browsers">
-                        <option value="In-person">
-                        <option value="LinkedIn">
-                        <option value="GitHub">
-                        <option value="Resume">
-                        <option value="Other">
+                    <label for="method">Please choose from list or specify if none apply:</label>
+                    <input list="methods" name="method" id="method">
+                    <datalist id="methods">
+                        <option value="inperson">In-person</option>
+                        <option value="linkedin">LinkedIn</option>
+                        <option value="github">GitHub</option>
+                        <option value="resume">Resume</option>
+                        <option value="other">Other</option>
                     </datalist>
                 </fieldset>
                 
