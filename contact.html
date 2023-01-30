@@ -83,14 +83,24 @@
                     <label for="phone">Phone:</label>
                     <input type="tel" id="phone" name="phone">
                     <br><br>
-                    <label for="linkedinurl">Phone:</label>
+                    <label for="linkedinurl">LinkedIn:</label>
                     <input type="url" id="linkedinurl" name="linkedinurl">
+                    <br><br>
+                    <label for="facebookurl">Facebook:</label>
+                    <input type="url" id="facebookurl" name="facebookurl">
                     <br><br>
                     <label for="preferred">Choose preferred contact:</label>
                     <select id="preferred">
-                        <option value="email">Email</option>
-                        <option value="phone">Phone</option>
-                        <option value="linkedin">LinkedIn</option>
+                        <optgroup label="Verbal">
+                            <option value="phone">Phone</option>
+                        </optgroup>
+                        <optgroup label="Written">
+                            <option value="email">Email</option>
+                        </optgroup>
+                        <optgroup label="Social Networking">
+                            <option value="linkedin">LinkedIn</option>
+                            <option value="facebook">Facebook</option>
+                        </optgroup>
                     </select>
                 </fieldset>
                 
