@@ -76,14 +76,45 @@
                     <input type="text" id="firstname" name="firstname"> 
                     <label for="lastname">Last name:</label>
                     <input type="text" id="lastname" name="lastname"> 
-                    <br>
+                    <br><br>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email">
-                    <br>
+                    <br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <br><br>
+                    <label for="linkedinurl">Phone:</label>
+                    <input type="url" id="linkedinurl" name="linkedinurl">
+                    <br><br>
+                    <label for="preferred">Choose preferred contact:</label>
+                    <input list="preferredlist" name="preferred" id="preferred">
+                    <datalist id="preferredlist">
+                        <option value="Email">
+                        <option value="Phone">
+                        <option value="LinkedIn">
+                    </datalist>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>How did you find me?</legend>
+                    <label for="browser">Choose from list:</label>
+                    <input list="browsers" name="browser" id="browser">
+                    <datalist id="browsers">
+                        <option value="In-person">
+                        <option value="LinkedIn">
+                        <option value="GitHub">
+                        <option value="Resume">
+                        <option value="Other">
+                    </datalist>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Leave me a note or any comments :)</legend>
+                    <textarea rows="5" cols="50"></textarea>
                 </fieldset>
 
+                <br>
                 <input type="submit" value="Submit">
-                
             </form>
         </aside>
         
