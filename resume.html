@@ -47,13 +47,12 @@
         </nav>
     </header>
     <main>
-        <canvas id="rectCanvas"></canvas>
+        <canvas id="txtCanvas"></canvas>
         <script>
-            var c = document.getElementById("rectCanvas");
-            var ctx = c.getContext("2d");
-            ctx.globalAlpha = 0.3;
-            ctx.fillStyle = "blue"; 
-            ctx.fillRect(0, 0, window.innerWidth, innerHeight); 
+            var c = document.getElementById("txtCanvas");
+            var ctx = c.getContext("2d"); 
+            ctx.font = "24px Arial";
+            ctx.strokeText("Feel free to save my resume :D", 0, 50);
         </script>
     </main>
     <hr>
